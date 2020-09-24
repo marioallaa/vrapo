@@ -7,11 +7,7 @@ try:
     t = magic.from_file(fileToRun[1:], mime=True)
 except Exception as e:
     t = ''
-if 'image' in t:
-    os.system('eog' + fileToRun)
-elif '/pdf' in t:
-    os.system('evince' + fileToRun)
-elif t == 'text/x-python':
+if t == 'text/x-python':
     os.system('python3' + fileToRun)
 elif t == 'text/plain':
     t = fileToRun.split('.')[-1]

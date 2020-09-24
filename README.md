@@ -3,16 +3,13 @@ A script to run most of the programs/code only by writing 'vrapo %filename||comm
 
 ## Supports
 ```
-- images:
-    - png
-    - jpg
-    - jpeg
-    - svg
-- pdf
+- all filetypes xdg-open supports
+
 - programming languages:
     - python
     - JavaScript
     - TypeScript
+    - npm run
 ```
 
 ## alias
