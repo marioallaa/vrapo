@@ -1,9 +1,22 @@
 # vrapo
-a script to run most of the programs/code only by writing 'vrapo %filename||command%
+A script to run most of the programs/code only by writing 'vrapo %filename||command%
 
+## Supports
+```
+- images:
+    - png
+    - jpg
+    - jpeg
+    - svg
+- pdf
+- programming languages:
+    - python
+    - JavaScript
+    - TypeScript
+```
 
 ## alias
-`` alias vrapo='python3 %vrapo-repository%/vrapo.py'``
+add `` alias vrapo='python3 %vrapo-repository%/vrapo.py'`` to your`~/.bashrc` file
 
-## dependecies
+## dependencies
 `` python3 -m pip install python-magic ``

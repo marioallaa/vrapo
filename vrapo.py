@@ -3,8 +3,7 @@ import sys, os, magic
 fileToRun = ''
 for l in sys.argv[1:]:
     fileToRun+= ' ' + l
-
-try: 
+try:
     t = magic.from_file(fileToRun[1:], mime=True)
 except Exception as e:
     t = ''
@@ -21,9 +20,9 @@ elif t == 'text/plain':
     elif t == 'js' or t == 'ts':
         os.system('node' + fileToRun)
 elif os.path.isfile('./package.json'):
-    os.system('npm run' + fileToRun) 
-else: 
-    print('filetype: ', t, 'unsuported')
+    os.system('npm run' + fileToRun)
+else:
+    print('filetype: ', t, 'unsupported')
 
 
 
