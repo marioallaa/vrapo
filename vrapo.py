@@ -18,7 +18,7 @@ elif t == 'text/plain':
 elif os.path.isfile('./package.json'):
     os.system('npm run' + fileToRun)
 elif fileToRun:
-    os.system('xdg-open' + fileToRun)...
+    os.system('xdg-open' + fileToRun)
 else:
     print('unsupported filetype || no file at all')
 
